@@ -29,4 +29,8 @@ export class UsersService {
      })
   }
 
+  deleteUser(id: number) {
+    return this.usersRepository.delete({id})
+
+  }
 }
